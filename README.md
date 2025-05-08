@@ -31,3 +31,6 @@ fn main() -> ent {
     }
 }
 ```
+
+# Library used
+[c-vector](https://github.com/wrkean/c-vector) (my own implementation of C++ vectors in C)
