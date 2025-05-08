@@ -1,7 +1,0 @@
-[
-  {
-    "directory": "/data/data/com.termux/files/home/Dev/C/bisakol",
-    "command": "gcc -std=c23 -Wall -Iinclude -c main.c -o main.o",
-    "file": "main.c"
-  }
-]
