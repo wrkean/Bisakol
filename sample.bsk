@@ -1,0 +1,16 @@
+fn main() -> ent {
+    tugoti x = 5;
+    tugoti y = 7;
+
+    por z sa 0..5 {
+        x -= z;
+    }
+
+    kung x + y == 12 {
+        balik 0;
+    } kung kani x - y <= 0 {
+        balik 1;
+    } kung wala {
+        balik 2;
+    }
+}
