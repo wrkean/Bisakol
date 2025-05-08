@@ -1,6 +1,7 @@
 # Bisakol
-A toy programming language with keywords resembling that of the Cebuano language from the Philippines.
-**TODO**
+A toy programming language with keywords resembling that of the Cebuano language from the Philippines.  
+
+##### TODO
 - Lexer (in progress)
 - Parser
 - Semantic Analysis
@@ -29,6 +30,4 @@ fn main() -> ent {
         balik 2;
     }
 }
-```
-```
 ```
