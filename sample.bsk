@@ -1,0 +1,34 @@
+// This is a comment
+ila foo(some: doble) {
+
+}
+
+
+ila main() -> numero {
+    tugoti x = 5
+    tugoti y: doble = 6_000.72
+    tugoti z = "helllo"
+
+    para x sa 0..1 {
+        z = "Hi"
+    }
+
+    kung x == y {
+
+    } kungdili kay  y == x {
+
+    } kungdili {
+
+    }
+
+    buhata {
+
+
+    } samtang x == y
+
+    balik y + x
+
+    klase Class {
+        tugoti name = "class"
+    }
+}

@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+cd build
+make
+./app "$1"
+cd ..

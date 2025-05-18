@@ -1,0 +1,35 @@
+program => statement*
+
+statement           => assignment_stmt
+                    | if_stmt
+                    | while_loop
+                    | for_loop
+                    | function_def
+                    | block
+
+assignment_stmt     => 'tugoti' IDENTIFIER (':' TYPE)? ('=' | '+=' | '-=' | '*=' | '/=') expression ';'?
+if_stmt             => 'kung' relational_expr block elseif_stmt? else_stmt?
+elseif_stmt         => ('kungdili' 'kay' relational_expr block)+
+else_stmt           => 'kungdili' block
+while_loop          => 'samtang' relational_expr block
+for_loop            => 'para' IDENTIFIER 'sa' (range_expr | expression) block
+function_def        => 'ila' identfier '(' param_list? ')' ('->' type)? bloBUHATA,                           // do
+param_list          => param (',' param)*
+param               => identifier ':' type
+
+expression          => logical_expr
+logical_expr        => relational_expr ( ('ug' | 'oh' ) relational_expr )*
+relational_expr     => term ( ('<=' | '<' | '>=' | '>' | '==' | '!=') term )*
+term                => factor ( ('+' | '-') factor )*
+factor              => unary ( ('*' | '/') unary )*
+unary               => ('di' | '+' | '-') primary
+primary             => expression
+                    | INT_LITERAL
+                    | FLOAT_LITERAL
+                    | IDENTIFIER
+                    | bool_literal
+                    | STRING
+                    | CHAR
+
+bool_literal        => 'tinuod' | 'dili'
+range_expr          => '='? expression '..' expression
