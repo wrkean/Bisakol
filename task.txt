@@ -1,4 +1,0 @@
-NEXT TO DO:
-    - Apply identifier lexing, integer and float lexing, string lexing
-    - Apply whitespace ignore
-    - Apply commend support with //
